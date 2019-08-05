@@ -2,9 +2,10 @@
 
 Crash contains a ready-to-crash system image and scripts to run it under qemu. The image is accessible via ssh on localhost port 2112, and should be able to access the network through NAT.
 
-This repo requires Git Large File Storage
-(https://git-lfs.github.com/). The scripts depend on symbolic links in
-the targets directory that may not be well preserved by git.
+**This repo requires Git Large File Storage
+(https://git-lfs.github.com/). It is necessary to install git-lfs and
+configure it before cloning the repo**.  The scripts depend on symbolic
+links in the targets directory that may not be well preserved by git.
 
 - disk1.img -> bionic-server-cloudimg-arm64.img
 - initrd.img -> initrd.img-4.15.0-55-generic
